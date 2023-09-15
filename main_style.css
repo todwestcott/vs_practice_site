@@ -1,7 +1,7 @@
 a {
     text-decoration: none;
     color: gray;
-    font-size: 12px;
+    font-size: .7em;
     text-transform: uppercase;
     font-weight: 600;
     font-family: Montserrat, sans-serif;
@@ -13,13 +13,13 @@ a:hover {
 
 button {
     background-color: #A16AE8;
-    font-size: 16px;
+    font-size: .8em;
     border: 0;
     text-transform: uppercase;
     line-height: 1em;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
     font-weight: 700;
-    padding: 10px 20px 10px 20px;
+    padding: .5em 1em .5em 1em;
     border-radius: 3px;
     color: white;
     transition: all .3s;
@@ -29,11 +29,14 @@ button {
 button:hover {
     background-color: #E784d8;
     transform: scale(1.1);
-    color: black;
+    color: #222222;
 }
 .container {
     max-width: 80%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 0;
 }
 .logo img {
     max-width: 125px;
@@ -49,7 +52,7 @@ button:hover {
 }
 .bar {
     width: 35px;
-    background-color: purple;
+    background-color: #A16AE8;
     height: 3px;
     margin: .1em;
 }
@@ -63,14 +66,19 @@ button:hover {
 }
 .hamburger a {
     text-decoration: none;
-    color: gray;
+    color: #222222;
     margin-bottom: 2px;
+    margin-top: 1em;
+}
+.hamburger a:hover {
+    color: #E784d8;
 }
 .promo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
     justify-content: center;
+    margin-top: 40px;
 
 }
 
@@ -94,6 +102,11 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 25px;
+    margin-top: 2em;
+}
+.j_button {
+    display: grid;
+    justify-self: right;
 }
 .galleries  img {
     width: 100%;
@@ -101,8 +114,19 @@ button:hover {
 .bio {
     margin: 10px;
 }
-.dedication {
-    font-size: .7em;
+.dedication {display: flex;
+    font-size: .5em;
+}
+.dedication img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    max-width: 80px;
+
+}
+.footer {
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 .footer_logo {
     max-width: 80px;

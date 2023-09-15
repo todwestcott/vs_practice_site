@@ -23,4 +23,8 @@
 }
 .color_heading {
     color: #A16AE8;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
 }
