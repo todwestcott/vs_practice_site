@@ -25,6 +25,7 @@ button {
     transition: all .3s;
     width: auto;
     margin-top: 10px;
+    max-height: 2em;
 }
 button:hover {
     background-color: #E784d8;
@@ -79,15 +80,17 @@ button:hover {
     gap: 25px;
     justify-content: center;
     margin-top: 40px;
-
 }
-
 #slide {
     max-width: 100%;
 }
-.left_box {
+.left {
     display: grid;
     justify-self: start;
+}
+.center {
+    display: grid;
+    justify-self: center;
 }
 .left_side {
     display: grid;
@@ -106,7 +109,7 @@ button:hover {
 }
 .j_button {
     display: grid;
-    justify-self: center;
+    justify-self: right;
 }
 .galleries  img {
     width: 100%;
