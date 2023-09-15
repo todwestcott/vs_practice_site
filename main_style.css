@@ -119,6 +119,8 @@ button:hover {
 }
 .dedication {display: flex;
     font-size: .5em;
+    max-width: 110ch;
+    align-items: end;
 }
 .dedication img {
     height: 80px;
