@@ -1,0 +1,94 @@
+a {
+    text-decoration: none;
+    color: gray;
+}
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+.logo img {
+    max-width: 125px;
+}
+.logo {
+    text-align: center;
+}
+.large_nav {
+    display: none;
+}
+.large_nav a {
+    margin: 10px;
+}
+.bar {
+    width: 35px;
+    background-color: purple;
+    height: 3px;
+    margin: 1.5px;
+}
+.hamburger>.small_nav {
+    display: none;
+}
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hamburger a {
+    text-decoration: none;
+    color: gray;
+    margin-bottom: 2px;
+}
+.promo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    justify-content: center;
+
+}
+.shop {
+    max-width: 6em;
+    max-height: 2em;
+}
+#slide {
+    max-width: 100%;
+}
+.left {
+    display: grid;
+    justify-self: start;
+}
+.left_side {
+    display: grid;
+    justify-items: center;
+    align-content: start;
+
+}
+.left_side p {
+    max-width: 15em;
+}
+.galleries {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+.galleries  img {
+    width: 100%;
+}
+.bio {
+    margin: 10px;
+}
+.dedication {
+    font-size: .7em;
+}
+.footer_logo {
+    max-width: 80px;
+}
+@media screen and (min-width: 687px) {
+    .hamburger {
+        display: none;
+    }
+    .large_nav {
+        display: block;
+    }
+}
+#slides {
+    display: none;
+}
