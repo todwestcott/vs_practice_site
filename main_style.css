@@ -85,7 +85,7 @@ button:hover {
 #slide {
     max-width: 100%;
 }
-.left {
+.left_box {
     display: grid;
     justify-self: start;
 }
@@ -106,7 +106,7 @@ button:hover {
 }
 .j_button {
     display: grid;
-    justify-self: right;
+    justify-self: center;
 }
 .galleries  img {
     width: 100%;
