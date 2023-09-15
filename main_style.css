@@ -39,6 +39,19 @@ button:hover {
     margin-top: 0;
     padding-top: 0;
 }
+.container {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+.color_heading {
+    color: #A16AE8;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Montserrat, serif;
+}
 .logo img {
     max-width: 125px;
 }
@@ -118,9 +131,11 @@ button:hover {
     margin: 10px;
 }
 .dedication {display: flex;
-    font-size: .5em;
-    max-width: 110ch;
+    font-size: .8em;
+    max-width: 80ch;
     align-items: end;
+    align-items: end;
+    font-family: Montserrat sans-serif;
 }
 .dedication img {
     height: 80px;
