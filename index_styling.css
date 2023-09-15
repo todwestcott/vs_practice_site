@@ -1,0 +1,26 @@
+.visit {
+    font-family: "Rock Salt", sans-serif;
+    font-size: 3em;
+    text-align: center;
+    line-height: 1.5em;
+    margin: .25em;
+    padding: 0;
+}
+.visit + p {
+    font-family: "Lora", sans-serif;
+    font-style: italic;
+    line-height: 1.1em;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: .25em;
+    padding: 0;
+}
+.container {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+.color_heading {
+    color: #A16AE8;
+}
