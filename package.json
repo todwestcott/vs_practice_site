@@ -4,5 +4,8 @@
     "magnific-popup": "^1.1.0",
     "npm": "^10.1.0",
     "photoswipe": "^5.4.0"
+  },
+  "devDependencies": {
+    "prettier": "3.0.3"
   }
 }

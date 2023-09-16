@@ -1,167 +1,278 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Home Decor Gallery</title>
-    <meta charset="UTF-8">
-    <link href="img/homepage/flavicon_40.jpg" rel="shortcut icon" type="image/x-icon">
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-          name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <link href="main_style.css" rel="stylesheet">
-    <link href="gallery_style.css" rel="stylesheet">
-    <link href="magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <link
+      href="img/homepage/flavicon_40.jpg"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <meta
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <link href="main_style.css" rel="stylesheet" />
+    <link href="gallery_style.css" rel="stylesheet" />
+    <link href="magnific-popup/dist/magnific-popup.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <script src="magnific-popup/dist/jquery.magnific-popup.js"></script>
     <style>
-        .image-source-link {
-            color: #98C3D1;
-        }
-        .mfp-with-zoom .mfp-container,
-        .mfp-with-zoom.mfp-bg {
-            opacity: 0;
-            -webkit-backface-visibility: hidden;
-            /* ideally, transition speed should match zoom duration */
-            -webkit-transition: all 0.3s ease-out;
-            -moz-transition: all 0.3s ease-out;
-            -o-transition: all 0.3s ease-out;
-            transition: all 0.3s ease-out;
-        }
-        .mfp-with-zoom.mfp-ready .mfp-container {
-            opacity: 1;
-        }
-        .mfp-with-zoom.mfp-ready.mfp-bg {
-            opacity: 0.8;
-        }
-        .mfp-with-zoom.mfp-removing .mfp-container,
-        .mfp-with-zoom.mfp-removing.mfp-bg {
-            opacity: 0;
-        }
+      .image-source-link {
+        color: #98c3d1;
+      }
+      .mfp-with-zoom .mfp-container,
+      .mfp-with-zoom.mfp-bg {
+        opacity: 0;
+        -webkit-backface-visibility: hidden;
+        /* ideally, transition speed should match zoom duration */
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+      }
+      .mfp-with-zoom.mfp-ready .mfp-container {
+        opacity: 1;
+      }
+      .mfp-with-zoom.mfp-ready.mfp-bg {
+        opacity: 0.8;
+      }
+      .mfp-with-zoom.mfp-removing .mfp-container,
+      .mfp-with-zoom.mfp-removing.mfp-bg {
+        opacity: 0;
+      }
     </style>
-</head>
-<body>
-<div class="container">
-    <div class="logo">
-        <div class="logo"><img alt="logo" loading="lazy" src="img/homepage/header_250.jpg">
-            <p style="margin-top: -4px;">verdonna.com</p>
-            <div class="large_nav">
-                <a class="small_nav" href="index.html">Home</a>
-                <a class="small_nav" href="jewelry_gallery.html">Jewelry</a>
-                <a class="small_nav" href="cross_gallery.html">Crosses</a>
-                <a class="small_nav" href="home_decor_gallery.html">Home Decor</a>
-                <a class="small_nav" href="https://verdonnawestcott.etsy.com">Shop</a>
-            </div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <div class="logo">
+          <img alt="logo" loading="lazy" src="img/homepage/header_250.jpg" />
+          <p style="margin-top: -4px">verdonna.com</p>
+          <div class="large_nav">
+            <a class="small_nav" href="index.html">Home</a>
+            <a class="small_nav" href="jewelry_gallery.html">Jewelry</a>
+            <a class="small_nav" href="cross_gallery.html">Crosses</a>
+            <a class="small_nav" href="home_decor_gallery.html">Home Decor</a>
+            <a class="small_nav" href="https://verdonnawestcott.etsy.com"
+              >Shop</a
+            >
+          </div>
         </div>
         <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <a class="small_nav" href="index.html">Home</a>
-            <a class="small_nav" href="jewelry_gallery.html">Jewelry</a>
-            <a class="small_nav" href="cross_gallery.html">Crosses</a>
-            <a class="small_nav" href="home_decor_gallery.html">Home Decor</a>
-            <a class="small_nav" href="https://verdonnawestcott.etsy.com">Shop</a>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <a class="small_nav" href="index.html">Home</a>
+          <a class="small_nav" href="jewelry_gallery.html">Jewelry</a>
+          <a class="small_nav" href="cross_gallery.html">Crosses</a>
+          <a class="small_nav" href="home_decor_gallery.html">Home Decor</a>
+          <a class="small_nav" href="https://verdonnawestcott.etsy.com">Shop</a>
         </div>
+      </div>
     </div>
-</div>
-<h1 class="color_heading" style="text-align: center; margin-top: 50px;">Home Decor Gallery</h1>
-<div class="zoom-gallery">
-    <a href="img/gallery/Decor/popup/o1101-65.jpg" title=""><img
-            src="img/gallery/Decor/thumbnails/o1101-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1201-65.jpg" title=""><img
-            src="img/gallery/Decor/thumbnails/o1201-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1202-65.jpg" title=""><img
-            src="img/gallery/Decor/thumbnails/o1202-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1204-65.jpg" title=""><img
-            src="img/gallery/Decor/thumbnails/o1204-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1501-65.jpg" title=""><img
-            src="img/gallery/Decor/thumbnails/o1501-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1506-65.jpg" title=""><img
-            src="img/gallery/Decor/thumbnails/o1506-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1509-65.jpg"
-       title=""><img src="img/gallery/Decor/thumbnails/o1509-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1510-65.jpg" title=""><img alt=""
-                                                                 src="img/gallery/Decor/thumbnails/o1510-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1517-65.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/o1517-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1617-65.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/o1617-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1617-65-2.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/o1617-65-2.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1618-65.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/o1618-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1623-65.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/o1623-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1623-65-2.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/o1623-65-2.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1624-65.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/o1624-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1624-65-2.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/o1624-65-2.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1809-65.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/o1809-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1815-65.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/o1815-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1815-65-2.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/o1815-65-2.jpg"></a>
-    <a href="img/gallery/Decor/popup/o1820-65.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/o1820-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/ox1612-65.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/ox1612-65.jpg"></a>
-    <a href="img/gallery/Decor/popup/ox1612-65-2.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/ox1612-65-2.jpg"></a>
-    <a href="img/gallery/Decor/popup/ox1619-65.jpg" title=""><img
-            alt="" src="img/gallery/Decor/thumbnails/ox1619-65.jpg"></a>
-</div>
-<div class="galleries footer">
-    <div class="site_links">
+    <h1 class="color_heading" style="text-align: center; margin-top: 50px">
+      Home Decor Gallery
+    </h1>
+    <div class="zoom-gallery">
+      <a href="img/gallery/Decor/popup/o1101-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1101-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1201-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1201-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1202-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1202-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1204-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1204-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1501-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1501-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1506-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1506-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1509-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1509-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1510-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1510-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1517-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1517-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1617-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1617-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1617-65-2.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1617-65-2.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1618-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1618-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1623-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1623-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1623-65-2.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1623-65-2.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1624-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1624-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1624-65-2.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1624-65-2.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1809-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1809-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1815-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1815-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1815-65-2.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1815-65-2.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/o1820-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/o1820-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/ox1612-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/ox1612-65.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/ox1612-65-2.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/ox1612-65-2.jpg"
+      /></a>
+      <a href="img/gallery/Decor/popup/ox1619-65.jpg" title=""
+        ><img
+          alt=""
+          loading="lazy"
+          src="img/gallery/Decor/thumbnails/ox1619-65.jpg"
+      /></a>
+    </div>
+    <div class="galleries footer">
+      <div class="site_links">
         <div class="large_nav">
-            <a class="small_nav" href="index.html">Home</a>
-            <a class="small_nav" href="jewelry_gallery.html">Jewelry</a>
-            <a class="small_nav" href="cross_gallery.html">Crosses</a>
-            <a class="small_nav" href="home_decor_gallery.html">Home Decor</a>
-            <a class="small_nav" href="https://verdonnawestcott.etsy.com">Shop</a>
+          <a class="small_nav" href="index.html">Home</a>
+          <a class="small_nav" href="jewelry_gallery.html">Jewelry</a>
+          <a class="small_nav" href="cross_gallery.html">Crosses</a>
+          <a class="small_nav" href="home_decor_gallery.html">Home Decor</a>
+          <a class="small_nav" href="https://verdonnawestcott.etsy.com">Shop</a>
         </div>
+      </div>
+      <div class="dedication">
+        <img alt="" class="footer_logo left" src="img/homepage/footer_80.jpg" />
+        <span style="margin-left: 0.8em"
+          >This website is dedicated to our Lord Jesus Christ. It is filled with
+          creations by rhinestone mosaic artist Verdonna Westcott. Visit her
+          Etsy shop to view current items for purchase. Remember, with Jesus by
+          your side all good things are possible!</span
+        >
+      </div>
     </div>
-    <div class="dedication"><img alt="" class="footer_logo left" src="img/homepage/footer_80.jpg">
-        <span style="margin-left: .8em;">This website is dedicated to our Lord Jesus Christ. It is filled with creations by rhinestone mosaic artist Verdonna Westcott.
-                Visit her Etsy shop to view current items for purchase. Remember, with Jesus by your side all good things are possible!</span>
-    </div>
-</div>
-<script>$(document).ready(function () {
-    $('.zoom-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        closeOnContentClick: false,
-        closeBtnInside: false,
-        mainClass: 'mfp-with-zoom mfp-img-mobile',
-        image: {
+    <script>
+      $(document).ready(function () {
+        $(".zoom-gallery").magnificPopup({
+          delegate: "a",
+          type: "image",
+          closeOnContentClick: false,
+          closeBtnInside: false,
+          mainClass: "mfp-with-zoom mfp-img-mobile",
+          image: {
             verticalFit: true,
             titleSrc: function (item) {
-                return item.el.attr('title') + ' <a class="image-source-link" href="' + item.el.attr('data-source') + '" target="_blank"></a>';
-            }
-        },
-        gallery: {
-            enabled: true
-        },
-        zoom: {
+              return (
+                item.el.attr("title") +
+                ' <a class="image-source-link" href="' +
+                item.el.attr("data-source") +
+                '" target="_blank"></a>'
+              );
+            },
+          },
+          gallery: {
+            enabled: true,
+          },
+          zoom: {
             enabled: true,
             duration: 300, // don't forget to change the duration also in CSS
             opener: function (element) {
-                return element.find('img');
-            }
-        }
-
-    });
-});
-</script>
-<script>
-    $(".hamburger").click(function () {
+              return element.find("img");
+            },
+          },
+        });
+      });
+    </script>
+    <script>
+      $(".hamburger").click(function () {
         $(".hamburger a").toggleClass("small_nav");
         console.log("i've been clicked.");
-    })
-</script>
-</body>
+      });
+    </script>
+  </body>
 </html>
-
-
